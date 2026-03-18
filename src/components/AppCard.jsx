@@ -1,10 +1,10 @@
 import React from 'react'
-import { FaDownload } from 'react-icons/fa'
+import { FaDownload, FaStar } from 'react-icons/fa'
 
 function AppCard({ title, downloads, rating, image }) {
     return (
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-3 flex flex-col gap-3">
-            <div className="w-full aspect-[3/4] overflow-hidden rounded-xl bg-gray-100">
+            <div className="w-full aspect-[4/4] overflow-hidden rounded-xl bg-gray-100">
                 <img
                     src={image}
                     alt={title}
