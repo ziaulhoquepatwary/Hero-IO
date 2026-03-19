@@ -31,7 +31,6 @@ const InstalledApps = () => {
                     </h2>
 
                     <div className="relative inline-block w-full sm:w-auto min-w-[180px]">
-                        {/* Select Input Field */}
                         <select
                             className="appearance-none w-full bg-white border border-slate-200 text-slate-600 text-sm font-medium py-2.5 px-4 pr-10 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#00D991]/20 focus:border-purple-600 transition-all cursor-pointer"
                             defaultValue="sort-by-size"
@@ -42,24 +41,20 @@ const InstalledApps = () => {
                             <option value="top-rated">Top Rated</option>
                         </select>
 
-                        {/* Custom Arrow Icon (Absolute position) */}
                         <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
                             <FaChevronDown className="text-[10px] text-slate-400" />
                         </div>
                     </div>
                 </div>
 
-                {/* App List Container */}
                 <div className="flex flex-col gap-5">
                     {apps.map((app) => (
                         <div
                             key={app.id}
                             className="group bg-white p-5 md:p-7 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row items-center gap-6"
                         >
-                            {/* App Icon (Placeholder) */}
                             <div className="w-20 h-20 bg-[#D9D9D9] rounded-xl flex-shrink-0" />
 
-                            {/* App Content */}
                             <div className="flex-grow text-center md:text-left">
                                 <h3 className="text-xl font-bold text-[#1E293B] mb-2 leading-tight">
                                     {app.name}
@@ -80,7 +75,6 @@ const InstalledApps = () => {
                                 </div>
                             </div>
 
-                            {/* Action Button */}
                             <div className="w-full md:w-auto">
                                 <button className="bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-10 py-3 rounded-xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:opacity-90 hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-inner">
                                     Uninstall
