@@ -1,5 +1,6 @@
 import React from 'react'
 import AppCard from '../../components/AppCard';
+import { Link } from 'react-router-dom';
 
 const apps = [
     {
@@ -77,9 +78,10 @@ function TrendingApps() {
 
                 {/* Show All Button */}
                 <div className="flex justify-center mt-10">
-                    <button className="bg-purple-600 hover:bg-purple-700 text-white font-semibold text-sm px-10 py-3 rounded-xl transition-colors">
+                    <Link to="/apps"
+                        className="bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-10 py-3 rounded-xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:opacity-90 hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-inner">
                         Show All
-                    </button>
+                    </Link>
                 </div>
 
             </div>
