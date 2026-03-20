@@ -69,7 +69,7 @@ function Navbar() {
                     {/* Right: Action Button */}
                     <div className="flex justify-center md:justify-end order-2 md:order-none">
                         <Link
-                            to="https://github.com"
+                            to="https://github.com/ziaulhoquepatwary"
                             target="_blank"
                             className="flex items-center gap-2 px-6 py-2 rounded-full font-semibold text-white bg-gradient-to-r from-purple-600 to-blue-500 hover:opacity-90 transition transform hover:scale-105 shadow-md"
                         >

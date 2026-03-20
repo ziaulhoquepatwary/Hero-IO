@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "title": "SmPlan:ToDo List With Reminder",
+    "companyName": "productive.io",
+    "image": "https://play-lh.googleusercontent.com/6yT8JfjY4ESEu69QpxHxjhyVhIoPgpbol1t4hEgfiBcGP0gy35ez0NvxyARrq5VPcGU",
+    "description": "SmPlan is a sophisticated focus application that takes the globally recognized Pomodoro technique and adapts it for the complexities of modern professional lifestyles. Rather than simply functioning as a basic countdown timer, this app meticulously constructs a comprehensive digital environment dedicated to deep work. It empowers users to minimize daily distractions and maximize their cognitive concentration by allowing the creation of fully customized work and break intervals. Users can effectively track their session progress, monitor daily completion goals, and analyze highly detailed statistical insights regarding their personal focus habits over extended periods. This tool is essential for anyone looking to master their time management and achieve peak productivity through a structured and data-driven approach to task handling and mental discipline.",
+    "size": 291,
+    "reviews": 54000,
+    "ratingAvg": 4.9,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 2800 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 11000 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Forest: Focus For Productivity",
+    "companyName": "SeekrTech",
+    "image": "https://play-lh.googleusercontent.com/NWRVVF6zXvmcqspJwdFOKcQG6OlsNwpMOxED_DgB6B2BBDeWwAeWZKZxGhgqU0LQVJU",
+    "description": "Forest offers a uniquely creative and gamified solution designed to liberate users from the growing epidemic of smartphone addiction while encouraging them to stay present in the moment. The core concept is beautifully simple yet highly effective: whenever you need to focus on a task, you plant a virtual seed within the app. As long as you remain focused and avoid using your phone for other distractions, that seed will gradually flourish into a majestic tree. However, if the temptation becomes too great and you leave the app to check social media or messages, your developing tree will unfortunately wither and die. This psychological incentive helps users build a personal digital forest that serves as a living testament to their hard work, dedication, and ability to maintain concentration in a world filled with constant digital interruptions.",
+    "size": 156,
+    "reviews": 42000,
+    "ratingAvg": 4.7,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 3500 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 15000 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "Alarm Clock Alarmy",
+    "image": "https://play-lh.googleusercontent.com/gXJLTDIvxXTK6uKl2e3Od_zmrlEul1CbkgxWxjbGeDzLl4EMFsdfER2VEgqAue2v1TE",
+    "description": "Widely celebrated as the world's highest-rated alarm clock application, Alarmy is specifically engineered to ensure that even the heaviest sleepers are fully awake and alert. Unlike traditional alarms that are easily silenced with a simple swipe, Alarmy incorporates a series of innovative 'Missions' that must be successfully completed to turn off the sound. These include the 'Photo Mission,' requiring you to take a picture of a specific registered object, the 'Barcode Mission' for scanning specific items, and the challenging 'Math Mission' to stimulate cognitive function immediately upon waking. By forcing physical and mental engagement, it effectively eliminates the habit of oversleeping or repeatedly hitting the snooze button, providing the ultimate morning solution for those who struggle to start their day with energy and punctuality.",
+    "size": 85,
+    "reviews": 120000,
+    "ratingAvg": 4.8,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 80000 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "Shikudo",
+    "image": "https://play-lh.googleusercontent.com/Dp9w3L54TBZgWPB1auw22DQ7Dgzj-6iceKy_A2KgSqpbEoFKIo__WCqLxHyfDl2pZ0s=w240-h480-rw",
+    "description": "Focus Plant is an immersive and highly gamified focus timer meticulously designed to help individuals better manage their time while prioritizing the truly important aspects of their lives. By utilizing the app, users can transform their dedicated focus time into magical raindrops, which are then used to nurture and grow a wide variety of adorable digital plants. This environmental simulation encourages users to save a world suffering from a barren desert through their own personal discipline. The app provides a compelling visual representation of productivity, where every minute of concentration contributes to the restoration of a digital ecosystem. It is an ideal tool for students and professionals who enjoy RPG-style progression and want to turn the often-tiring task of time management into an engaging, rewarding, and visually stimulating gardening adventure.",
+    "size": 112,
+    "reviews": 25000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 12000 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "Habit Tracker Inc",
+    "image": "https://play-lh.googleusercontent.com/kfpAxLPDEfpr3-uMNfHy8Xf4EmQZ-GvqhnOlytzM90j-3phnjAuHVreoo_ldEA8QGA=w240-h480-rw",
+    "description": "Morning Habits is a comprehensive lifestyle companion designed to empower users to build their dream life through the establishment of healthy, sustainable daily routines. The application provides a robust platform for tracking personal progress, setting customized smart reminders, and maintaining a consistent schedule that promotes long-term mental and physical well-being. Whether you are looking to incorporate meditation, exercise, or reading into your day, this app offers the structural support needed to turn those intentions into permanent behaviors. With intuitive visualization tools and motivational milestone tracking, Morning Habits helps you understand your behavioral patterns and encourages you to stay committed to your self-improvement journey. It is a vital tool for anyone seeking to bring order to their morning chaos and start every single day with a sense of purpose and clarity.",
+    "size": 45,
+    "reviews": 12000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "Oleksandr Albul",
+    "image": "https://play-lh.googleusercontent.com/51TpGciMV4OD8i6UxfcYKZJHha6STDUm5GYOyKaZSgLCNb4WR7X0ZaGddhLAUywNTvoHY3_oV0KWxjWyu7qV=w240-h480-rw",
+    "description": "Time Planner is a high-performance productivity tool specifically engineered for individuals who desire total control over their busy schedules and diverse activities. If you are looking to significantly increase your daily output and maintain a clear overview of your professional and personal responsibilities, this app provides the perfect organizational framework. It features an advanced task management system that allows for granular planning, including the categorization of tasks, priority setting, and time-tracking for specific projects. The interface is designed to be both powerful and flexible, accommodating everything from simple to-do lists to complex long-term project milestones. By utilizing Time Planner, users can eliminate the stress of missed deadlines and optimize their workflow, ensuring that every hour of the day is used as efficiently and effectively as possible.",
+    "size": 18,
+    "reviews": 8500,
+    "ratingAvg": 4.4,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "Cat Tech",
+    "image": "https://play-lh.googleusercontent.com/2-coFiL20JMqVh6mWWyn1ZpkOxn90NGYkLSvj5lxlk6yBBucC5LpcLS0G_pq3xG8owbN=w240-h480-rw",
+    "description": "Pomocat combines the scientifically proven effectiveness of the Pomodoro technique with an irresistibly charming aesthetic to create a delightful study and work companion. Designed for those who appreciate a touch of cuteness in their productivity tools, this app encourages users to focus on their tasks in short, concentrated bursts. As a unique reward for your hard work and sustained attention, you can collect a wide variety of adorable digital cats, each with their own unique personality and style. This collection mechanic provides a consistent sense of achievement and makes the often-monotonous process of studying or working significantly more enjoyable. With Pomocat, the goal is not just to finish your work, but to grow your digital feline family through consistent discipline, making it a perfect choice for students and cat lovers alike.",
+    "size": 67,
+    "reviews": 15000,
+    "ratingAvg": 4.9,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 11000 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "FLIP - Focus Timer For Study",
+    "companyName": "RinaSoft",
+    "image": "https://play-lh.googleusercontent.com/k0p0PlV3iitTUJaBk4P2NWiMHcAKrI7gB0ap7b9sIVCcKvE9RT6MTLf1Fr5oOUMQ1nFc",
+    "description": "FLIP is a revolutionary focus management application that offers a precise way to measure and improve your concentration levels through an innovative flip-to-timer mechanic. To begin your focus session, you simply place your smartphone face down, which automatically triggers the timer and prevents you from accessing distracting apps. This physical interaction creates a psychological boundary between your work and digital distractions. The app accurately measures your total focus time and provides a 'Focus Level' score based on your consistency and duration of concentration. Users can compare their focus statistics with others globally, fostering a healthy sense of competition. FLIP is particularly effective for students preparing for exams who need an honest and accurate assessment of their study habits to ensure they are making the most of their limited preparation time.",
+    "size": 94,
+    "reviews": 65000,
+    "ratingAvg": 4.3,
+    "downloads": 12000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 20000 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "CoinKeeper: Budget & Bills",
+    "companyName": "Disrapp",
+    "image": "https://play-lh.googleusercontent.com/xLE_wIPNx-ZW7cY7uVE1aSIt7toUpPK9HTJlZLuDhKRCpVviCrjQP5RZ1nunNLa3V-kuIkPOGimScp1z-KsR=w240-h480-rw",
+    "description": "CoinKeeper provides a comprehensive and highly intuitive platform designed to give users complete mastery over their personal finances and household budgets. Recognized for its unique coin-dragging interface, the app makes the often-tedious task of expense tracking feel quick and effortless. You can easily manage multiple accounts, track daily spending across various categories, and plan long-term savings goals within one unified system. The application also includes powerful bill reminder features to ensure you never face late fees again, along with detailed visual reports that highlight exactly where your money is going each month. Whether you are saving for a major purchase or simply trying to cut down on unnecessary costs, CoinKeeper offers the insights and tools necessary to achieve financial stability and build a secure economic future with total confidence.",
+    "size": 120,
+    "reviews": 45000,
+    "ratingAvg": 4.7,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 25000 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Zen: Meditation & Sleep",
+    "companyName": "Zen Studio",
+    "image": "https://img.freepik.com/free-photo/3d-cartoon-character-practising-yoga_23-2151467854.jpg?semt=ais_rp_progressive&w=740&q=80",
+    "description": "Zen is a premium wellness application dedicated to helping users relax their minds, reduce anxiety, and significantly improve the quality of their sleep. It features an extensive library of professionally guided meditations tailored for various needs, such as stress relief, improved focus, and emotional healing. In addition to meditation, Zen offers a rich collection of high-quality ASMR tracks, calming nature sounds, and soothing sleep stories designed to help you drift off into a peaceful slumber. The app's beautiful and serene interface creates an immediate sense of calm from the moment it is opened. Whether you are a beginner looking to start a mindfulness practice or an experienced meditator seeking deeper inner peace, Zen provides all the resources necessary to cultivate a balanced, healthy, and more tranquil lifestyle in today's fast-paced world.",
+    "size": 210,
+    "reviews": 32000,
+    "ratingAvg": 4.8,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 3500 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 18000 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "CryptoTracker Pro",
+    "companyName": "FinTech Devs",
+    "image": "https://play-lh.googleusercontent.com/TtwM1S1f99bRwklEdvzvYqVUL10_EYI7gfRUKinAR_8k25-yIBCG0FOhWtfpbqXBJU2etq2YCi6CjhbHshHDcW4=w240-h480-rw",
+    "description": "CryptoTracker Pro is a sophisticated, real-time cryptocurrency monitoring and portfolio management tool designed for both novice investors and professional traders. The application provides instant, up-to-the-minute price alerts for thousands of digital assets, ensuring that you never miss a critical market movement or investment opportunity. Users can seamlessly integrate their various exchange accounts and wallets to view their total net worth in one secure, unified dashboard. The app also features advanced analytical tools, including historical price charts, market cap rankings, and personalized portfolio performance metrics. With high-level encryption and a focus on data security, CryptoTracker Pro offers a safe and reliable way to stay informed about the volatile world of crypto, helping you make data-driven decisions and manage your digital wealth with professional-grade precision.",
+    "size": 55,
+    "reviews": 18000,
+    "ratingAvg": 4.6,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 1400 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 8000 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "FitGrid: Home Workout",
+    "companyName": "BodyTech",
+    "image": "https://play-lh.googleusercontent.com/k2wDJrAZj_46zsseXbD4_q4irT9m9ow1yzg_aO5J8gZLOOH-pyYpghKx4X9cg75Kh4j_",
+    "description": "FitGrid is a comprehensive home fitness solution that eliminates the need for expensive gym memberships by providing personalized workout plans that can be performed anywhere. The app features an extensive library of high-definition interactive video guides led by professional trainers, covering everything from high-intensity interval training (HIIT) and strength training to yoga and flexibility exercises. FitGrid's intelligent algorithm assesses your current fitness level and personal goals to generate a customized weekly schedule that evolves as you get stronger. With built-in progress tracking and motivational challenges, the app keeps you accountable and engaged on your fitness journey. Whether you have only ten minutes a day or an entire hour, FitGrid offers flexible and effective routines designed to fit seamlessly into your lifestyle, helping you achieve a healthier, stronger body from the comfort of your own home.",
+    "size": 178,
+    "reviews": 22000,
+    "ratingAvg": 4.4,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 2800 },
+      { "name": "3 star", "count": 4500 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "SwiftNote: Fast Notes",
+    "companyName": "NoteLabs",
+    "image": "https://play-lh.googleusercontent.com/EPQ2t21R8M4fRFB7DOXJZKn3pdCYRc6citVo6E5162MyWMkTBNzMtS37zzCz14voODpKqxpxHkJPEa_jxFK-=w240-h480-rw",
+    "description": "SwiftNote is engineered to be the ultimate digital notepad for those who need to capture their thoughts, ideas, and reminders with lightning-fast speed and minimal friction. The application features a beautiful, minimalist user interface that strips away unnecessary distractions, allowing you to focus entirely on your writing. With full markdown support, you can easily format your notes for better clarity and organization. SwiftNote also includes seamless cloud synchronization across multiple devices, ensuring that your important information is always accessible whether you are on your phone, tablet, or computer. Advanced search functionality and a flexible tagging system make it incredibly easy to find specific notes among thousands of entries. It is the perfect tool for writers, students, and busy professionals who require a reliable and efficient way to document their daily inspirations and critical information.",
+    "size": 12,
+    "reviews": 5000,
+    "ratingAvg": 4.2,
+    "downloads": 100000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "BlueScan: PDF Scanner",
+    "companyName": "Office Tools",
+    "image": "https://play-lh.googleusercontent.com/Ws2WcobJCK3U5j2eJ-Sz5v4EPJ3izsln4Ul54GEpNlnp-w0PZwh8OPxWc6NyZVdmMg",
+    "description": "BlueScan is a high-performance productivity application that transforms your smartphone into a powerful, portable document scanner capable of producing professional-quality results. Utilizing advanced Optical Character Recognition (OCR) technology, the app can automatically recognize text within scanned images, allowing you to search, edit, and export content with ease. It features intelligent edge detection and automatic enhancement tools to ensure that every scan is crisp, clear, and perfectly aligned. Users can easily organize their documents into folders, apply digital signatures, and export files in various formats, including high-quality PDF and JPEG. Whether you need to digitize receipts, business cards, or lengthy academic papers, BlueScan provides a convenient and secure way to manage your paperwork digitally, making it an indispensable tool for students, freelancers, and business professionals alike.",
+    "size": 64,
+    "reviews": 38000,
+    "ratingAvg": 4.7,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 2100 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 10000 },
+      { "name": "5 star", "count": 20000 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "WeatherGo: Local Forecast",
+    "companyName": "Skyline Apps",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZJAuzj5QtW750I8D25cTfS4TQo5SRTd9gg&s",
+    "description": "WeatherGo is a highly accurate and feature-rich meteorological application designed to provide users with precise local weather forecasts and real-time radar monitoring. The app offers a comprehensive suite of tools, including detailed 10-day planning charts, hourly temperature updates, and critical severe weather alerts to keep you safe from unexpected storms. Its interactive live radar maps allow you to track rain, snow, and wind patterns in your immediate area or anywhere across the globe. With additional data points such as UV index, humidity levels, and sunrise/sunset times, WeatherGo provides all the information needed to plan your outdoor activities and travel with total confidence. The clean, intuitive interface ensures that you can quickly access the most vital weather data at a glance, making it a must-have tool for anyone who wants to stay ahead of the elements and effectively manage their daily schedule.",
+    "size": 33,
+    "reviews": 27000,
+    "ratingAvg": 4.5,
+    "downloads": 6000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 6000 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 9000 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "LanguageFlow: Learn Fast",
+    "companyName": "Global Ed",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU0CBu5bvbMKhqLxolFDdOoXEnSrIK5A4fsw&s",
+    "description": "LanguageFlow is a revolutionary educational platform that makes learning a new language accessible, engaging, and highly effective for busy individuals. By dedicating just 15 minutes a day, users can make significant progress through a curriculum of interactive lessons designed by linguistic experts. The app utilizes advanced voice recognition technology to help you perfect your pronunciation and gain confidence in real-world conversations. With a focus on practical vocabulary and essential grammar, LanguageFlow ensures that you are learning the skills needed to communicate effectively in diverse cultural settings. The gamified learning experience, complete with daily streaks and achievement rewards, keeps users motivated and consistent in their studies. Whether you are preparing for international travel, a new career opportunity, or simply want to expand your horizons, LanguageFlow provides the most efficient path to achieving fluency in a new language.",
+    "size": 145,
+    "reviews": 55000,
+    "ratingAvg": 4.8,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 7000 },
+      { "name": "4 star", "count": 14000 },
+      { "name": "5 star", "count": 30000 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "RecipeBox: Home Cooking",
+    "companyName": "Foodie Hub",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kwRsK6APKplwT6-Ppaf-wPuC_94FeT1qEQ&s",
+    "description": "RecipeBox is a comprehensive digital culinary assistant that brings thousands of professional-grade recipes directly to your kitchen. Designed for both beginner cooks and seasoned foodies, the app features a powerful smart filtering system that allows you to discover delicious meals based specifically on the ingredients you already have in your pantry. You can easily save your favorite recipes into personalized collections, create automated grocery lists with a single tap, and follow step-by-step cooking instructions with built-in timers. The app also includes nutritional information for every dish, helping you maintain a healthy and balanced diet. Whether you are looking for a quick weeknight dinner or planning a complex multi-course feast for a special occasion, RecipeBox provides all the inspiration and organizational tools necessary to turn every meal into a successful and enjoyable home-cooked experience.",
+    "size": 89,
+    "reviews": 19000,
+    "ratingAvg": 4.6,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 8000 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "TaskMaster: Team Work",
+    "companyName": "DevCollaborate",
+    "image": "https://play-lh.googleusercontent.com/iybwDIWNMirmlygO_bcTsCxq5tqURJ83jBbviwdprQkyCVPNQtdEZ-iUeWRBtI8M5qjikqg6cjQ_ysk9Xb_R3w=w240-h480-rw",
+    "description": "TaskMaster is a powerful project management and team collaboration platform designed to streamline communication and increase efficiency for modern workgroups. The application offers a versatile set of tools, including highly visual Kanban boards, real-time team chat, and comprehensive project milestone tracking. With TaskMaster, team leaders can easily assign tasks, set deadlines, and monitor the progress of various projects within a single, unified interface. The app also supports file sharing and collaborative document editing, ensuring that all team members have access to the information they need to succeed. By centralizing all project-related communication and documentation, TaskMaster eliminates the need for endless email chains and disjointed meetings. It is an essential tool for any organization looking to improve their workflow, enhance team transparency, and achieve their professional goals with greater speed and coordination.",
+    "size": 52,
+    "reviews": 9000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Sleepwell: Smart Alarm",
+    "companyName": "BioTech Sleep",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/6b/6f/8a6b6f9f-bbe3-780a-d2c0-c9b9eba35432/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-85-220-0.png/1200x630wa.jpg",
+    "description": "Sleepwell is a cutting-edge sleep analysis and smart alarm application designed to help you wake up feeling refreshed, energized, and ready to tackle the day. By utilizing your phone's sensors, the app accurately tracks your sleep cycles throughout the night, identifying your periods of light, deep, and REM sleep. Its intelligent alarm feature then calculates the optimal moment to wake you up during your lightest sleep phase within a specified window, effectively preventing the grogginess and fatigue often caused by being woken during a deep sleep cycle. The app also provides detailed sleep quality reports and personalized suggestions for improving your sleep hygiene based on your specific patterns. With a selection of soothing, natural wake-up sounds, Sleepwell ensures a gentle and positive start to your morning, helping you maintain peak energy levels throughout the entire day.",
+    "size": 76,
+    "reviews": 31000,
+    "ratingAvg": 4.7,
+    "downloads": 7000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 10000 },
+      { "name": "5 star", "count": 15000 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "SkyMap: Star Gazer",
+    "companyName": "Astro Labs",
+    "image": "https://play-lh.googleusercontent.com/PSgidb4x5-cF0uq44N0d4eW-itEz7Df6ne_nMm83kIe3IWJt3SSmrkZ_moPz_MZOafhVIhTRqarwUyvP5oquMQ=w240-h480-rw",
+    "description": "SkyMap is an extraordinary augmented reality (AR) astronomy application that turns your smartphone into a window to the cosmos. By simply pointing your device at the night sky, you can instantly identify thousands of stars, complex constellations, distant planets, and even orbiting satellites in real-time. The app's beautiful and highly accurate AR overlay provides a wealth of information about celestial objects, including their history, distance from Earth, and cultural significance. With features like time travel to view the sky at different dates and a search function to locate specific stars, SkyMap offers a deeply educational and awe-inspiring experience for astronomy enthusiasts of all ages. Whether you are in a dark countryside or a light-polluted city, this app brings the wonders of the universe directly to your fingertips, fostering a profound connection with the vast expanse of space and time.",
+    "size": 240,
+    "reviews": 15000,
+    "ratingAvg": 4.9,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  }
+]
