@@ -1,60 +1,11 @@
 import React from 'react'
 import AppCard from '../../components/AppCard';
 import { Link } from 'react-router-dom';
-
-const apps = [
-    {
-        title: "Forest: Focus For Productivity",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "SmPlan:ToDo List With Reminder",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "FLIP - Focus Timer For Study",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "Pomocat - Cute Pomodoro Timer",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "Time Planner: Schedule & Tasks",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "Morning Habits - Daily Routine",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "Focus Plant: Pomodoro Forest",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "Alarmy - Alarm Clock & Sleep",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-];
+import appsData from '../../data/apps.json';
 
 
 function TrendingApps() {
+    const apps = appsData.slice(0, 8);
     return (
         <section className="bg-gray-50 py-14 px-4">
             <div className="max-w-6xl mx-auto">
@@ -72,7 +23,7 @@ function TrendingApps() {
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {apps.map((app) => (
-                        <AppCard key={app.title} {...app} />
+                        <AppCard key={app.id} app={app} />
                     ))}
                 </div>
 

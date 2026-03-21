@@ -5,6 +5,7 @@ import Error404 from "../components/Error404";
 import InstalledApps from "../page/installed-apps/InstalledApps";
 import AllApps from "../page/app-page/AllApps";
 import AppDetails from "../components/AppDetails";
+import apps from '../data/apps.json';
 
 const router = createBrowserRouter([
     {
@@ -20,8 +21,12 @@ const router = createBrowserRouter([
                 Component: AllApps
             },
             {
-                path: "app-details/:id",
-                Component: AppDetails
+                path: "apps/:id",
+                element: <AppDetails />,
+                loader: ({ params }) => {
+                    const singleApp = apps.find(app => app.id == params.id);
+                    return singleApp;
+                }
             },
             {
                 path: "installation",
