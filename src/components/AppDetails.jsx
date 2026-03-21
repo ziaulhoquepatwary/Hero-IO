@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FiDownload } from 'react-icons/fi';
 import { FaStar } from 'react-icons/fa';
 import { MdOutlineRateReview } from 'react-icons/md';
@@ -9,6 +9,10 @@ import { useLoaderData } from 'react-router-dom';
 
 const AppDetails = () => {
     const apps = useLoaderData();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const ratingData = apps?.ratings?.map(item => ({
         name: item.name,
@@ -59,7 +63,7 @@ const AppDetails = () => {
 
                         {/* Install Button */}
                         <button className="w-full sm:w-max bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-8 py-3 rounded-xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:opacity-90 hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-inner">
-                            Install Now ({apps.size})
+                            Install Now ({apps.size}) MB
                         </button>
                     </div>
                 </div>

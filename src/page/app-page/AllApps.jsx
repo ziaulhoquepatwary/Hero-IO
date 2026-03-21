@@ -1,59 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AppCard from '../../components/AppCard'
 import { FaSearch } from 'react-icons/fa'
-
-const apps = [
-    {
-        title: "Forest: Focus For Productivity",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "SmPlan:ToDo List With Reminder",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "FLIP - Focus Timer For Study",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "Pomocat - Cute Pomodoro Timer",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "Time Planner: Schedule & Tasks",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "Morning Habits - Daily Routine",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "Focus Plant: Pomodoro Forest",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-    {
-        title: "Alarmy - Alarm Clock & Sleep",
-        downloads: "9M",
-        rating: "5",
-        image: "https://images.unsplash.com"
-    },
-];
+import apps from '../../data/apps.json'
+import AppNotFound from '../../components/AppNotFound';
 
 function AllApps() {
+    const [search, setSearch] = useState("");
+
+    const filteredApps = apps.filter(app =>
+        app.title.toLowerCase().includes(search.toLowerCase())
+    );
+
     return (
         <section className="bg-[#f5f6f8] min-h-screen py-16 px-4 sm:px-6 lg:px-8 font-sans">
             <div className="max-w-7xl mx-auto">
@@ -81,6 +38,8 @@ function AllApps() {
                         <input
                             type="text"
                             placeholder="search Apps"
+                            value={search}
+                            onChange={(e) => setSearch(e.target.value)}
                             className="w-full sm:w-80 pl-10 pr-4 py-2 border border-gray-300 rounded-lg text-gray-700 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                         />
                     </div>
@@ -88,9 +47,13 @@ function AllApps() {
 
                 {/* App Grid Section */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-                    {apps.map((app) => (
-                        <AppCard key={app.title} {...app} />
-                    ))}
+                    {filteredApps.length > 0 ? (
+                        filteredApps.map((app) => (
+                            <AppCard key={app.title} app={app} />
+                        ))
+                    ) : (
+                        <AppNotFound />
+                    )}
                 </div>
 
             </div>

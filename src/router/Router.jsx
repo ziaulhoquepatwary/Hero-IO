@@ -6,6 +6,7 @@ import InstalledApps from "../page/installed-apps/InstalledApps";
 import AllApps from "../page/app-page/AllApps";
 import AppDetails from "../components/AppDetails";
 import apps from '../data/apps.json';
+import AppNotFound from "../components/AppNotFound";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: "installation",
                 Component: InstalledApps
+            },
+            {
+                path: "app-not-found",
+                Component: AppNotFound
             },
             {
                 path: '*',
