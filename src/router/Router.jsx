@@ -24,7 +24,8 @@ const router = createBrowserRouter([
             {
                 path: "apps/:id",
                 element: <AppDetails />,
-                loader: ({ params }) => {
+                loader: async ({ params }) => {
+                    await new Promise((resolve) => setTimeout(resolve, 800));
                     const singleApp = apps.find(app => app.id == params.id);
                     return singleApp;
                 }
