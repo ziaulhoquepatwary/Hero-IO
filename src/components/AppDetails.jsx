@@ -4,20 +4,64 @@ import { FaStar } from 'react-icons/fa';
 import { MdOutlineRateReview } from 'react-icons/md';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts';
 import { useLoaderData } from 'react-router-dom';
+import { useState } from 'react';
+import { isAppInstalled, saveInstalledApp } from '../utils/installedApps';
+import Swal from 'sweetalert2';
 
 
 
 const AppDetails = () => {
     const apps = useLoaderData();
+    const [installed, setInstalled] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
+
+        if (isAppInstalled(apps.id)) {
+            setInstalled(true);
+        }
+    }, [apps.id]);
 
     const ratingData = apps?.ratings?.map(item => ({
         name: item.name,
         value: item.count
     })).reverse();
+
+    const handleInstall = () => {
+        let progress = 0;
+
+        Swal.fire({
+            title: "Installing...",
+            html: `<div style="width:100%; background:#eee; border-radius:10px;">
+                <div id="progress-bar" style="width:0%; height:10px; background:#6c5ce7; border-radius:10px;"></div>
+              </div>`,
+            showConfirmButton: false,
+            allowOutsideClick: false,
+        });
+
+        const interval = setInterval(() => {
+            progress += 10;
+
+            const bar = document.getElementById("progress-bar");
+            if (bar) {
+                bar.style.width = `${progress}%`;
+            }
+
+            if (progress >= 100) {
+                clearInterval(interval);
+
+                Swal.fire({
+                    icon: "success",
+                    title: "Installed Successfully 🎉",
+                    timer: 1500,
+                    showConfirmButton: false,
+                });
+
+                saveInstalledApp(apps.id);
+                setInstalled(true);
+            }
+        }, 200);
+    };
 
 
     return (
@@ -62,8 +106,16 @@ const AppDetails = () => {
                         </div>
 
                         {/* Install Button */}
-                        <button className="w-full sm:w-max bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-8 py-3 rounded-xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:opacity-90 hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-inner">
-                            Install Now ({apps.size}) MB
+                        <button
+                            onClick={handleInstall}
+                            disabled={installed}
+                            className={`w-full sm:w-max px-8 py-3 rounded-xl font-semibold shadow-md transition-all duration-300
+                                ${installed
+                                    ? "bg-gray-400 cursor-not-allowed"
+                                    : "bg-gradient-to-r from-purple-600 to-blue-500 text-white hover:opacity-90 hover:scale-105 active:scale-95"
+                                }`}
+                        >
+                            {installed ? "Installed" : `Install Now (${apps.size}) MB`}
                         </button>
                     </div>
                 </div>
@@ -72,8 +124,8 @@ const AppDetails = () => {
 
                 <div className="mb-10">
                     <h2 className="text-xl font-bold text-[#0B1c33] mb-6">Ratings</h2>
-                    <div className="h-[250px] w-full -ml-4">
-                        <ResponsiveContainer width="100%" height="100%">
+                    <div className="w-full">
+                        <ResponsiveContainer width="100%" height={250}>
                             <BarChart
                                 layout="vertical"
                                 data={ratingData}
