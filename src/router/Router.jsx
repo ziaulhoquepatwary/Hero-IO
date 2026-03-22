@@ -35,7 +35,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "app-not-found",
-                Component: AppNotFound
+                element: <AppNotFound />
             },
             {
                 path: '*',

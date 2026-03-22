@@ -1,18 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import AppCard from '../../components/AppCard'
 import { FaSearch } from 'react-icons/fa'
 import apps from '../../data/apps.json'
 import AppNotFound from '../../components/AppNotFound';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function AllApps() {
     const [search, setSearch] = useState("");
+    const navigate = useNavigate();
 
     const filteredApps = apps.filter(app =>
         app.title.toLowerCase().includes(search.toLowerCase())
     );
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        
+        if (search !== "" && filteredApps.length === 0) {
+            navigate("/app-not-found");
+        }
+    }, [search, filteredApps.length, navigate]);
+
     return (
-        <section className="bg-[#f5f6f8] min-h-screen py-16 px-4 sm:px-6 lg:px-8 font-sans">
+        <section className="bg-[#f5f6f8] min-h-screen py-8 lg:py-16 px-4 sm:px-6 lg:px-8 font-sans">
             <div className="max-w-7xl mx-auto">
 
                 {/* Header Section */}
@@ -28,7 +38,7 @@ function AllApps() {
                 {/* Toolbar: App Count & Search */}
                 <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
                     <h3 className="text-xl font-bold text-[#0B1c33]">
-                        (8) Apps Found
+                        ({filteredApps.length}) Apps Found
                     </h3>
 
                     <div className="relative w-full sm:w-auto">
@@ -47,13 +57,9 @@ function AllApps() {
 
                 {/* App Grid Section */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-                    {filteredApps.length > 0 ? (
-                        filteredApps.map((app) => (
-                            <AppCard key={app.title} app={app} />
-                        ))
-                    ) : (
-                        <AppNotFound />
-                    )}
+                    {filteredApps.map((app) => (
+                        <AppCard key={app.title} app={app} />
+                    ))}
                 </div>
 
             </div>
