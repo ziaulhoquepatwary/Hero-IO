@@ -2,15 +2,15 @@ import React, { useMemo, useState } from 'react';
 import { MdOutlineFileDownload, MdOutlineRateReview, MdStar } from "react-icons/md";
 import { FaChevronDown } from "react-icons/fa6";
 import apps from '../../data/apps.json';
-import { getInstalledApps } from '../../utils/installedApps';
+import { getInstalledApps, removeInstalledApp } from '../../utils/installedApps';
 import InstalledApp from '../../components/InstalledApp';
 
 const MyInstallation = () => {
     const [sortBy, setSortBy] = useState('high-to-low');
-    const installed = getInstalledApps();
+    const [installedApps, setInstalledApps] = useState(getInstalledApps());
 
     const sortedApps = useMemo(() => {
-        const matching = apps.filter(app => installed.includes(app.id));
+        const matching = apps.filter(app => installedApps.includes(app.id));
 
         return [...matching].sort((a, b) => {
             if (sortBy === "high-to-low") {
@@ -19,9 +19,13 @@ const MyInstallation = () => {
                 return a.downloads - b.downloads;
             }
         });
-    }, [sortBy, installed]);
+    }, [sortBy, installedApps]);
 
-    console.log(sortedApps);
+    const handleRemove = (appId) => {
+        removeInstalledApp(appId);
+        setInstalledApps(getInstalledApps());
+    }
+
 
     return (
         <div className="bg-[#F8FAFC] py-16 px-4">
@@ -61,7 +65,7 @@ const MyInstallation = () => {
 
                 <div className="flex flex-col gap-5">
                     {sortedApps.map((app) => (
-                        <InstalledApp key={app.id} app={app} />
+                        <InstalledApp key={app.id} app={app} onUninstall={handleRemove} />
                     ))}
                 </div>
 

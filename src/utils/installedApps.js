@@ -16,3 +16,10 @@ export const saveInstalledApp = (appId) => {
         localStorage.setItem('installedApps', JSON.stringify(appInstalled));
     }
 }
+
+export const removeInstalledApp = (appId) => {
+    const installedApps = getInstalledApps();
+
+    const updated = installedApps.filter(app => app !== appId);
+    localStorage.setItem('installedApps', JSON.stringify(updated));
+};

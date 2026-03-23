@@ -1,7 +1,45 @@
 import React from 'react'
 import { MdOutlineFileDownload, MdOutlineRateReview, MdStar } from 'react-icons/md'
+import Swal from 'sweetalert2';
 
-function InstalledApp({app}) {
+function InstalledApp({ app, onUninstall }) {
+
+    const handleUnInstalled = () => {
+        let progress = 0;
+
+        Swal.fire({
+            title: "UnInstalling...",
+            html: `<div style="width:100%; background:#eee; border-radius:10px;">
+                        <div id="progress-bar" style="width:0%; height:10px; background:#6c5ce7; border-radius:10px;"></div>
+                      </div>`,
+            showConfirmButton: false,
+            allowOutsideClick: false,
+        });
+
+        const interval = setInterval(() => {
+            progress += 10;
+
+            const bar = document.getElementById("progress-bar");
+            if (bar) {
+                bar.style.width = `${progress}%`;
+            }
+
+            if (progress >= 100) {
+                clearInterval(interval);
+
+                Swal.fire({
+                    icon: "success",
+                    title: "Uninstalled Successfully 🎉",
+                    timer: 1500,
+                    showConfirmButton: false,
+                });
+
+                onUninstall(app.id);
+            }
+        }, 200);
+    };
+
+
     return (
         <div
             key={app.id}
@@ -30,7 +68,7 @@ function InstalledApp({app}) {
                 </div>
             </div>
 
-            <div className="w-full md:w-auto flex justify-center md:block">
+            <div onClick={handleUnInstalled} className="w-full md:w-auto flex justify-center md:block">
                 <button className="bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-10 py-3 rounded-xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:opacity-90 hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-inner">
                     Uninstall {app.size} MB
                 </button>
