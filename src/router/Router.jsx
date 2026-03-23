@@ -2,11 +2,11 @@ import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "../layout/RootLayout";
 import Home from "../page/home-page/Home";
 import Error404 from "../components/Error404";
-import InstalledApps from "../page/installed-apps/InstalledApps";
 import AllApps from "../page/app-page/AllApps";
 import AppDetails from "../components/AppDetails";
 import apps from '../data/apps.json';
 import AppNotFound from "../components/AppNotFound";
+import MyInstallation from "../page/installed-apps/MyInstallation";
 
 const router = createBrowserRouter([
     {
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "installation",
-                Component: InstalledApps
+                Component: MyInstallation
             },
             {
                 path: "app-not-found",
