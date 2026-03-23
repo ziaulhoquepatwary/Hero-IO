@@ -1,14 +1,20 @@
 import React from 'react';
-// Importing icons from React Icons (Material Design and Font Awesome)
-import { MdOutlineFileDownload, MdStar } from "react-icons/md";
+import { MdOutlineFileDownload, MdOutlineRateReview, MdStar } from "react-icons/md";
 import { FaChevronDown } from "react-icons/fa6";
+import apps from '../../data/apps.json';
+import { getInstalledApps } from '../../utils/installedApps';
+import InstalledApp from '../../components/InstalledApp';
 
 const InstalledApps = () => {
-    const apps = [
-        { id: 1, name: 'Forest: Focus For Productivity', downloads: '9M', rating: '5', size: '258 MB' },
-        { id: 2, name: 'Forest: Focus For Productivity', downloads: '9M', rating: '5', size: '258 MB' },
-        { id: 3, name: 'Forest: Focus For Productivity', downloads: '9M', rating: '5', size: '258 MB' },
-    ];
+    const installed = getInstalledApps()
+
+    const matchingApps = apps.filter(app =>
+        installed.includes(app.id)
+    );
+
+    console.log(matchingApps);
+
+
 
     return (
         <div className="bg-[#F8FAFC] py-16 px-4">
@@ -27,7 +33,7 @@ const InstalledApps = () => {
                 {/* Filter Section */}
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
                     <h2 className="text-2xl font-bold text-[#1E293B]">
-                        {apps.length} Apps Found
+                        {matchingApps.length} Apps Found
                     </h2>
 
                     <div className="relative inline-block w-full sm:w-auto min-w-[180px]">
@@ -48,39 +54,8 @@ const InstalledApps = () => {
                 </div>
 
                 <div className="flex flex-col gap-5">
-                    {apps.map((app) => (
-                        <div
-                            key={app.id}
-                            className="group bg-white p-5 md:p-7 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row items-center gap-6"
-                        >
-                            <div className="w-20 h-20 bg-[#D9D9D9] rounded-xl flex-shrink-0" />
-
-                            <div className="flex-grow text-center md:text-left">
-                                <h3 className="text-xl font-bold text-[#1E293B] mb-2 leading-tight">
-                                    {app.name}
-                                </h3>
-
-                                <div className="flex flex-wrap justify-center md:justify-start items-center gap-5 text-slate-500 font-medium">
-                                    <div className="flex items-center gap-1">
-                                        <MdOutlineFileDownload className="text-xl text-[#00D991]" />
-                                        <span>{app.downloads}</span>
-                                    </div>
-                                    <div className="flex items-center gap-1">
-                                        <MdStar className="text-xl text-[#F97316]" />
-                                        <span>{app.rating}</span>
-                                    </div>
-                                    <div className="flex items-center gap-1">
-                                        <span>{app.size}</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="w-full md:w-auto">
-                                <button className="bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-10 py-3 rounded-xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:opacity-90 hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-inner">
-                                    Uninstall
-                                </button>
-                            </div>
-                        </div>
+                    {matchingApps.map((app) => (
+                        <InstalledApp key={app.id} app={app} />
                     ))}
                 </div>
 
