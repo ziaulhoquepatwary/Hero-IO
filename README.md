@@ -9,6 +9,12 @@ Whether you're browsing on a phone, tablet, or desktop, **Hero IO** delivers a s
 
 ---
 
+## 🌐 Live Demo
+
+🔗 **[Visit Hero IO →](YOUR_LIVE_LINK_HERE)**
+
+---
+
 ## ✨ Features
 
 ### 🏠 Home Page
@@ -51,7 +57,7 @@ Whether you're browsing on a phone, tablet, or desktop, **Hero IO** delivers a s
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](./screenshot/homepage.png)
+![Home Page](./src/assets/home-page.jpg)
 
 ---
 ## 🛠️ Technologies Used
@@ -93,11 +99,6 @@ npm run dev
 
 ---
 
-## 🌐 Live Demo
-
-🔗 **[Visit Hero IO →](YOUR_LIVE_LINK_HERE)**
-
----
 ## 👨‍💻 Author
 
 **Ziaul Hoque Patwary**  
