@@ -28,7 +28,7 @@ const MyInstallation = () => {
 
 
     return (
-        <div className="bg-[#F8FAFC] py-16 px-4">
+        <div className="bg-[#F8FAFC] min-h-screen py-16 px-4">
             <div className="max-w-5xl mx-auto">
 
                 {/* Header Section */}
@@ -64,9 +64,15 @@ const MyInstallation = () => {
                 </div>
 
                 <div className="flex flex-col gap-5">
-                    {sortedApps.map((app) => (
-                        <InstalledApp key={app.id} app={app} onUninstall={handleRemove} />
-                    ))}
+                    {sortedApps.length > 0 ? (
+                        sortedApps.map((app) => (
+                            <InstalledApp key={app.id} app={app} onUninstall={handleRemove} />
+                        ))
+                    ) : (
+                        <p className="text-slate-500 text-center min-h-full py-45">
+                            No installed apps found.
+                        </p>
+                    )}
                 </div>
 
             </div>
